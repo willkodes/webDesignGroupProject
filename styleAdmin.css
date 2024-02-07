@@ -1,0 +1,157 @@
+/* Body and Header setting */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #af4141;
+    margin-bottom: 50px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+/*-----------------------------------*/
+/* List setting */
+nav ul li a:hover {
+    color: #000; 
+    font-weight: bold; 
+}
+
+nav {
+    background-color: #d6d6d6;
+    padding: 10px;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+nav ul li a:hover {
+    color: #000;
+}
+ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+li {
+    margin-bottom: 10px;
+}
+/*-----------------------------------*/
+/* Container for body word */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+h1, h2 {
+    color: #ac5656;
+    text-align: center;
+}
+p {
+    line-height: 1.4;
+    color: #494242;
+}
+/*---------------------------------*/
+/* Display Graph Decoration*/
+.feature {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.feature-item {
+    flex-basis: 20%;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 100px; 
+}
+.feature-item h3 {
+    color: hwb(0 69% 15%);
+}
+.feature-item p {
+    color: #777;
+}
+/*----------------------------------*/
+/*Video and Images setting */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin:  auto;
+}
+video {
+    width: 100%;
+    height: auto;
+  }
+
+/*--------------------------------*/
+/* Link box setting and Text Link*/
+.box {
+    display: inline-block;
+    background-color: #ad7070;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+    margin-top: 20px;
+}
+.box a {
+    text-decoration: none; 
+}
+
+/*-----------------------------------*/
+/* Footer Setting */
+footer {
+    background-color: #242121;
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+/*-----------------------------------*/
+.comment-section{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#comment {
+    margin: 20px 0px;
+    width: 95%; 
+    height: 100px;
+    padding: 20px; 
+}
+
+#name,
+    #email,
+    #website {
+        padding: 10px;
+        margin-right: 10px; 
+        display: inline-block; 
+    }
+
+    #comment-form button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin-top: 20px;
+    }
