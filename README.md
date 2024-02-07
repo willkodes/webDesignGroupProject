@@ -1,3 +1,5 @@
 # webDesignGroupProject
 
-if you see this you are in the read me 
+## Webpages
+[Cyber Security Architect](securityArchitect.html)
+[Data Scientist](dataScientist.html)
