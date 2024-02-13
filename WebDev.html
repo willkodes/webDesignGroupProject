@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Database Administrator</title>
+    <title>WebDev</title>
     <link rel="stylesheet" href="styleWeb.css">
+    <link rel="stylesheet" href="Slidebar.css">
 </head>
 <body>
     <header>
-        <h1>Web Developer</h1>
+        <h1>Web Developer</h1>     
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Full Stack Developer</a></li>
-            <li><a href="#">IT Technician</a></li>
-            <li><a href="AdminData.html">Database Administrator</a></li>
-            <br>
-            <li><a href="WebDev.html">Web Developer</a></li>
-            <li><a href="dataScientist.html">Data Scientist</a></li>
-            <li><a href="securityArchitect.html">Cyber Security Architect</a></li>
-        </ul>
-    </nav>
+    <div class="navbar">
+        <a href="Index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Career Type</button>
+          <div class="dropdown-content">
+            <a href="FullStackDeveloper.html">Full Stack Developer</a>
+            <a href="ItTechnician.html">IT Technician</a>
+            <a href="AdminData.html">Database Administrator</a>
+            <a href="WebDev.html">Web Developer</a>
+            <a href="dataScientist.html">Data Scientist</a>
+            <a href="securityArchitect.html">Cyber Security Architect</a>
+          </div>
+        </div>
+    </div>
     <div class="container">
         <h1>Welcome to the World of WWW!</h1>
         <h2>What is web development?</h2>
@@ -113,12 +117,16 @@
             <form id="comment-form">
                 <label for="comment">Comment:</label><br>
                 <textarea id="comment" name="comment" required></textarea><br>
+                
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required autocomplete="name">
+                
                 <label for="email">Email:</label>
-                <input type="text" id="email" name="email" required>
+                <input type="email" id="email" name="email" required autocomplete="email">
+                
                 <label for="website">Website:</label>
-                <input type="text" id="website" name="website" required>
+                <input type="url" id="website" name="website" required autocomplete="url">
+                
                 <button type="submit">Post Comment >></button>
             </form>
         </div>
