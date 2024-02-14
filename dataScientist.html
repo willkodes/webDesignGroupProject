@@ -18,9 +18,12 @@
         }
         header {
             background-color: #2d5fbb;
-            color: #fff;
+            color: #ffffff;
             padding: 20px;
             text-align: center;
+            background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=815&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 815w, https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1115&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1115w, https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1415&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1415w, https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1630&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1630w, https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1715&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1715w, https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2015w, https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2230&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2230w, https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2315&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2315w, https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2426w'); 
+            background-size: cover;
+            background-position: center; 
         }
         nav {
             background-color: #d6d6d6;
@@ -51,6 +54,42 @@
         p{
             font-size: large;
         }
+        h2{
+            color: #2d5fbb;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        img {
+            max-width: 15%;
+            max-height: 15%;
+            height: auto; 
+        }
+        td{
+            padding-bottom: 20px;
+            text-align: center;
+            font-size: large;
+        }
+        .table2 {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #dddddd;
+        }
+        .table2 th, .table2 td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: left;
+            background-color: #2d5fbb2a;
+        }
+        .table2 th {
+            background-color: #2d5fbb;
+            color: white;
+        }
+        span{
+            text-align: center;
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -74,6 +113,12 @@
         </div>
     </div>
     <div class="container">
+        <span>
+        <a href="#jobDesc">Job Description</a> <a href="#qual">Qualifications</a> <a href="#lang">Languages</a> <a href="#comp">Comparison</a>
+        <br><a href="#sal">Salaries</a> <a href="#dem">Demand</a> <a href="#sat">Satisfaction</a> <a href="#more">More</a>
+        </span>
+
+        <div id="jobDesc">
         <h2>Job Description</h2>
         <p>Data scientists are responsible for analyzing complex datasets to extract insights and valuable information that can aid in decision-making processes.
             <br><br>
@@ -81,7 +126,9 @@
             <br><br>
             Data scientists often collaborate with cross-functional teams to identify business problems, formulate hypotheses, and develop data-driven solutions.
         </p>
+       </div>
 
+        <div id="qual">
         <h2>Qualifications and Skills</h2>
         <p>
             A strong background in mathematics, statistics, and computer science is essential for aspiring data scientists
@@ -90,39 +137,98 @@
             <br><br>
             Effective communication skills and the ability to translate technical findings into actionable insights for non-technical stakeholders are also important.
         </p>
+        </div>
 
+        <div id="lang">
         <h2>Programming Lanugages</h2>
-        <ul>
-            <li>Python</li>
-            <li>R</li>
-            <li>SQL</li>
-        </ul>
-        <h4>Data Maniuplation Libraries Used</h4>
-        <ul>
-            <li>Pandas</li>
-            <li>NumPy</li>
-            <li>Matplotlib</li>
-            <li>Seaborn</li>
-        </ul>
+        <table>
+            <tr>
+                <td style="width: 25%;"><a href="https://www.python.org/"><img src="https://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png" alt="Python"></a></td>
+                <td><a href="https://www.r-project.org/"><img src="https://www.r-project.org/Rlogo.png" alt="Python"></a></td>
+                <td style="width: 25%;"><a href="https://www.w3schools.com/sql/"><img src="https://seeklogo.com/images/A/azure-sql-database-logo-D7A32C9CD9-seeklogo.com.png" alt="Python"></a></td>
+            </tr>
+        </table>
+        <h2>Data Maniuplation Libraries Used</h2>
+        <table>
+        <tr>
+            <td style="width: 25%;"><a href="https://pandas.pydata.org/"><img src="https://seeklogo.com/images/P/pandas-logo-776F6D45BB-seeklogo.com.png" alt="Python"></a></td>
+            <td style="width: 50%;"><a href="https://numpy.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/NumPy_logo_2020.svg/512px-NumPy_logo_2020.svg.png" alt="Python"></a></td>
+            <td><a href="https://matplotlib.org/"><img src="https://numfocus.org/wp-content/uploads/2016/07/Matplotlib_Logo_191209.png" alt="Python"></a></td>
+        </tr>
+        </table>
+        </div>
+        <div id="comp">
+        <h2>Data Scientist vs Statistician</h2>
+        <div class="table2">
+        <table>
+            <tr>
+              <th></th>
+              <th>Data Scientist</th>
+              <th>Statistician</th>
+            </tr>
+            <tr>
+              <td>Primary Focus</td>
+              <td>Extract insights from data to solve complex business problems.</td>
+              <td>Analyze data to understand patterns, make predictions, and test hypotheses.</td>
+            </tr>
+            <tr>
+              <td>Skills</td>
+              <td>Strong in data analysis, machine learning, programming, and domain knowledge.</td>
+              <td>Expertise in statistical analysis, experimental design, and probability theory.</td>
+            </tr>
+            <tr>
+              <td>Tools</td>
+              <td>R, Python, SQL, machine learning libraries (e.g., TensorFlow, scikit-learn).</td>
+              <td>R, Python, SAS, SPSS, statistical software.</td>
+            </tr>
+            <tr>
+              <td>Applications</td>
+              <td>Business analytics, predictive modeling, recommendation systems, data-driven decision-making.</td>
+              <td>Experimental design, hypothesis testing, forecasting, quality control.</td>
+            </tr>
+            <tr>
+              <td>Education</td>
+              <td>Bachelor's or higher degree in computer science, statistics, mathematics, or related field.</td>
+              <td>Bachelor's or higher degree in statistics, mathematics, or related field.</td>
+            </tr>
+            <tr>
+              <td>Typical Employers</td>
+              <td>Tech companies, finance, healthcare, e-commerce, consulting firms.</td>
+              <td>Research institutions, government agencies, pharmaceutical companies, academia.</td>
+            </tr>
+          </table>
+          </div>
 
-        <h2>Salary (High)</h2>
+        </div>
+
+        <div id="sal">
+        <h2>Salary</h2>
         <p>Data scientists typically command competitive salaries due to the high demand for their skills and expertise.
         These salaries will vary depending on the size of the company and the location.
         </p>
         <p><b>Entry Salaries</b> can range from $60,000 - $100,000 </p>
         <p><b>Senior Salaries</b> can range from $100,000 to $200,000+</p>
+        </div>
         
-        <h2>Job Market Demand (High)</h2>
+        <div id="dem">
+        <h2>Job Market Demand</h2>
         <p>
             The demand for data scientists continues to grow rapidly across various industries, including technology, finance, healthcare, e-commerce, and marketing
         <br><br>
         Organizations are increasingly relying on data-driven insights to drive strategic decisions and gain a competitive edge, leading to a consistent need for skilled data professionals.
         </p>
-
+        </div>
+        
+        <div id="sat">
         <h2>Job Satisfaction</h2>
         <p>
             Many data scientists find their work intellectually stimulating and rewarding, as they have the opportunity to solve complex problems and make significant contributions to business outcomes.
         </p>
+        </div>
+        <div id="more">
+        <h2>More Information on Data Scientist</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/O9nf1CqjGzI?si=U2_WcGU9mNu2dGt9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </div>
 
 
