@@ -4,11 +4,16 @@
         <title>Job Title: Full Stack Developer</title>
         <link rel="stylesheet" href="Slidebar.css">
         <style>
+            body {
+                margin: 0px;
+                padding:0px;
+            }
             header {
-                text-align: center;
                 color:cornsilk;
                 font-size: xx-large;
-                border-bottom: 2px solid black;
+                background-color:cadetblue;
+                text-align: center;
+                padding: 40px;
             }
             a {
                 text-decoration: none;
@@ -54,10 +59,20 @@
             form {
                 text-align: center;
             }
+            .header {
+
+                display: inline-block;
+            }
+            section {
+                padding: 50px;
+            }
         </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <header>
+            <div class="header"><a href="https://www.w3schools.com/whatis/whatis_fullstack.asp" target="_blank">Stack Developer</a></div>
+        </header>
         <div class="navbar">
             <a href="Index.html">Home</a>
             <div class="dropdown">
@@ -72,8 +87,7 @@
               </div>
             </div>
         </div>
-        <header><a href="https://www.w3schools.com/whatis/whatis_fullstack.asp" target="_blank">Stack Developer</a></header>
-        <section class="frist">
+        <section>
             <img src="frontEnd.jpg" alt="frontEnd" class="frontEnd">
             <p>A full stack developer is a versatile professional who possesses the skills and knowledge to work on both the front end and back end of web applications. They are proficient in a wide range of technologies and frameworks, allowing them to handle various aspects of the software development process. Here's some information about full stack developers:</p>
             <p><a href="https://en.wikipedia.org/wiki/Front-end_web_development" target="_blank"><b>Front End Development:</b></a> Full stack developers are adept at building the user-facing components of web applications. This involves creating responsive and interactive user interfaces using HTML, CSS, and JavaScript. They often work with front end frameworks and libraries such as React, Angular, or Vue.js to enhance the functionality and aesthetics of web pages.</p>
@@ -133,7 +147,6 @@
                     <li><b>Continuous Integration and Deployment (CI/CD) Tools</b></li>
                 </ul>
             </ol>
-        </section>
         <h3 class="last">If you are intersted in full stack development, please fill in the form below, we will send news to you.</h3>
         <form action="">
             <label for="fname">First name: </label><br />
@@ -154,5 +167,6 @@
             <label for="backEnd">Back End</label><br />
             <input type="submit">
         </form>
+        </section>
     </body>
 </html>
