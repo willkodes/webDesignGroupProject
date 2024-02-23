@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Careers</title>
+    <title>Data Scientist</title>
     <link rel="stylesheet" href="Slidebar.css">
-    <!--test-->
     <style>
+        /* Add your custom CSS styles here */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -90,6 +90,19 @@
             text-align: center;
             display: block;
         }
+        .quiz-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        .option {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -100,6 +113,7 @@
     <!--Put our Careers in this and link it-->
     <div class="navbar">
         <a href="Index.html">Home</a>
+        <a href="jobs.html">Jobs Hiring</a>
         <div class="dropdown">
           <button class="dropbtn">Career Type</button>
           <div class="dropdown-content">
@@ -117,6 +131,8 @@
         <a href="#jobDesc">Job Description</a> <a href="#qual">Qualifications</a> <a href="#lang">Languages</a> <a href="#comp">Comparison</a>
         <br><a href="#sal">Salaries</a> <a href="#dem">Demand</a> <a href="#sat">Satisfaction</a> <a href="#more">More</a>
         </span>
+
+        <a href="#quiz"><h3>Want to Take the Quiz?</h3></a>
 
         <div id="jobDesc">
         <h2>Job Description</h2>
@@ -229,8 +245,66 @@
         <h2>More Information on Data Scientist</h2>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/O9nf1CqjGzI?si=U2_WcGU9mNu2dGt9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
+
+        <div id="quiz">
+            <h2>Data Scientist Quiz</h2>
+    <form action="quiz-results.php" method="post">
+        
+        <div class="question">
+            <p>1. What is the primary role of a data scientist?</p>
+            <div class="option">
+                <input type="radio" id="role-analytics" name="question1" value="analytics">
+                <label for="role-analytics">Perform data analytics</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="role-modeling" name="question1" value="modeling">
+                <label for="role-modeling">Build predictive models</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="role-insight" name="question1" value="insight">
+                <label for="role-insight">Extract insights from data</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>2. Which programming language is commonly used in data science?</p>
+            <div class="option">
+                <input type="radio" id="language-python" name="question2" value="python">
+                <label for="language-python">Python</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="language-java" name="question2" value="java">
+                <label for="language-java">Java</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="language-c" name="question2" value="c">
+                <label for="language-c">C</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>3. What is the process of preparing data for analysis called?</p>
+            <div class="option">
+                <input type="radio" id="prep-data" name="question3" value="data-prep">
+                <label for="prep-data">Data Preparation</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="data-mining" name="question3" value="mining">
+                <label for="data-mining">Data Mining</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="data-analytics" name="question3" value="analytics">
+                <label for="data-analytics">Data Analytics</label>
+            </div>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+        </div>
     </div>
 
-
+    <footer>
+        <p style="text-align: center;">Last updated: February 22, 2024</p>
+    </footer>
 </body>
 </html>
