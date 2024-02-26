@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Group 9</title>
-    <link rel="stylesheet" href="../CSS/signIn.css">
+    <link rel="stylesheet" href="../CSS/SignUp.css">
     <link rel="stylesheet" href="../CSS/Slidebar.css">
 </head>
 <body>
@@ -28,28 +28,26 @@
         </div>
         <div class="container">
             <div class="Sign-in">
-                <h2 style="color: black;">Sign In</h2>
+                <h2 style="color: black;">Register</h2>
             </div>
             <hr style="height: 3px;">
+            <div class="input-box">
+                <input type="email" style="background-image: url('https://cdn-icons-png.flaticon.com/512/3178/3178158.png'); background-size: 45px;"placeholder="Email" required>
+            </div>
             <div class="input-box">
                 <input type="text" style="background-image: url('https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png');"placeholder="Username" required>
             </div>
             <div class="input-box">
-                <input type="password" style="background-image: url('https://static.vecteezy.com/system/resources/previews/000/566/954/non_2x/lock-icon-vector.jpg');margin-top: -30px;"placeholder="Password" required>
+                <input type="password" style="background-image: url('https://static.vecteezy.com/system/resources/previews/000/566/954/non_2x/lock-icon-vector.jpg'); background-size: 55px;"placeholder="Password" required>
             </div>
+            <div class="agree">
+                <label><input type="checkbox"> I have read and agreed to the<a href="#"> terms and conditions</a></label>
+            </div>
+            <button type="submit" class="btn" >Sign Up</button>
             <hr>
             <span>Or</span>
-            <div class="login-box">
-                <button><img src="https://cdn.iconscout.com/icon/free/png-256/free-google-1772223-1507807.png"> Sign in with Google</button>
-                <button><img src="https://www.ept.ca/wp-content/uploads/2020/06/Apple-logo.png" > Sign in with Apple</button>
-            </div>
-            <div class="remember">
-                <label><input type="checkbox"> Remember me</label>
-                <a href="#">Forget Password?</a>
-            </div>
-            <button type="submit" class="btn" >Login</button>
-            <div class="register-link">
-                <p>Don't have an account? <a href="SignUp.html">Register</a></p>
+            <div class="signin-link">
+                <p>Already have an account? <a href="SignIn.html">Sign In</a></p>
             </div>
         </div>
     </form>
