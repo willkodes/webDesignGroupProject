@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Group 9</title>
-    <link rel="stylesheet" href="signIn.css">
-    <link rel="stylesheet" href="Slidebar.css">
+    <link rel="stylesheet" href="../CSS/signIn.css">
+    <link rel="stylesheet" href="../CSS/Slidebar.css">
 </head>
 <body>
     <header>
         <h1>Form</h1>
     </header>
-    <div class="animation">
     <form>
         <div class="navbar">
             <a href="Index.html">Home</a>
@@ -29,25 +28,31 @@
         </div>
         <div class="container">
             <div class="Sign-in">
-                <h2>Sign In</h2>
+                <h2 style="color: black;">Sign In</h2>
+            </div>
+            <hr style="height: 3px;">
+            <div class="input-box">
+                <input type="text" style="background-image: url('https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png');"placeholder="Username" required>
             </div>
             <div class="input-box">
-                <input type="text" style="height: 20px;"placeholder="Username" required>
+                <input type="password" style="background-image: url('https://static.vecteezy.com/system/resources/previews/000/566/954/non_2x/lock-icon-vector.jpg');margin-top: -30px;"placeholder="Password" required>
             </div>
-            <div class="input-box">
-                <input type="password" style="height: 20px;" placeholder="Password" required>
+            <hr>
+            <span>Or</span>
+            <div class="login-box">
+                <button><img src="https://cdn.iconscout.com/icon/free/png-256/free-google-1772223-1507807.png"> Sign in with Google</button>
+                <button><img src="https://www.ept.ca/wp-content/uploads/2020/06/Apple-logo.png" > Sign in with Apple</button>
             </div>
             <div class="remember">
                 <label><input type="checkbox"> Remember me</label>
                 <a href="#">Forget Password?</a>
             </div>
-            <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn" >Login</button>
             <div class="register-link">
                 <p>Don't have an account? <a href="#">Register</a></p>
             </div>
         </div>
     </form>
-    </div>
 </body>
 
     <footer>
