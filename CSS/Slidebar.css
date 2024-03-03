@@ -71,3 +71,21 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.navbar .SignIn{
+  color: white;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: #8a4f4f;
+  
+}
+.navbar .SignUp{
+  color: white;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: #8a4f4f;
+  text-align: center;
+  display: block;
+  padding: 14px 16px;
+}

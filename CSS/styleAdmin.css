@@ -4,7 +4,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #af4141;
-    margin-bottom: 50px;
 }
 
 header {
@@ -56,6 +55,7 @@ li {
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
+    display: block;
 }
 h1, h2 {
     color: #ac5656;
@@ -119,10 +119,10 @@ footer {
     color: #fff;
     padding: 0px;
     text-align: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    position: relative;
     width: 100%;
+    height: 70px;
+    padding-top: 20px;
 }
 /*-----------------------------------*/
 .comment-section{
@@ -148,10 +148,50 @@ footer {
         display: inline-block; 
     }
 
-    #comment-form button {
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        margin-top: 20px;
+#comment-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+
+    /*---------------------------------*/
+    /*Aside*/
+    .container, aside {
+        margin-bottom: 1em; 
     }
+    aside {
+        position: fixed;
+        top: 186px;
+        height: 500px; 
+        width: 480px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        margin-left: 100px;
+        margin-left: 100px;
+    }
+    aside h2 {
+        font-size: 180%;
+        padding-top: 10px;
+        padding-bottom: 10px; 
+    }
+
+    aside ul {
+        text-align: center;
+        list-style-type: none;
+        padding: 0;
+      }
+aside ul a {
+  text-decoration: none; 
+  font-size: 140%;
+  color: inherit; /* Inherit color from parent */
+}
+aside ul li{
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+aside ul li:hover {
+    background-color: #765b5b;
+}
