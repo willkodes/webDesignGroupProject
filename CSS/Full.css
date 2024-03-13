@@ -1,0 +1,220 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    width: auto;
+    background-color: azure;
+    margin: lem auto;
+    padding: 15px 0;
+
+}
+
+header {
+    color: cornsilk;
+    font-size: xx-large;
+    background-color: cadetblue;
+    text-align: center;
+    padding: 40px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #8a4f4f;
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+
+}
+
+/* background color for navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* background color for dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #aa1e1e;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.frontEnd {
+    float: right;
+    width: 30%;
+}
+
+.backEnd {
+    float: left;
+    width: 30%;
+}
+
+p {
+    font-size: x-large;
+    text-indent: 20px;
+    color: cadetblue;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+li {
+    padding: 5px;
+}
+
+iframe {
+    float: right;
+    width: 30%;
+    height: 250px;
+}
+
+.video {
+    float: left;
+    width: 30%;
+    height: 250px;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+.list {
+    margin-left: 380px;
+
+}
+
+.ol {
+    margin-right: 380px;
+}
+
+.ol,
+.list {
+    background-color: #F4F6DA;
+    width: auto;
+    height: 250px;
+    border: 1px solid;
+    overflow: auto;
+}
+
+
+.last {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid black;
+    text-align: center;
+    color: blue;
+}
+
+form {
+    text-align: center;
+
+}
+
+.header {
+
+    display: inline-block;
+}
+
+section {
+    padding: 50px;
+}
+
+.form input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.form div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+
+footer {
+    clear: both;
+    border-top: 2px solid black;
+    padding-top: .7em;
+}
+
+footer address {
+    font-size: 80%;
+    text-align: right;
+    margin-left: 600px;
+}
