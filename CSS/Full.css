@@ -3,9 +3,8 @@ body {
     font-size: 100%;
     width: auto;
     background-color: azure;
-    margin: lem auto;
-    padding: 15px 0;
-
+    margin: 0px;
+    padding: 0px;
 }
 
 header {
@@ -33,13 +32,11 @@ header {
     text-decoration: none;
 }
 
-/* The dropdown container */
 .dropdown {
     float: left;
     overflow: hidden;
 }
 
-/* Dropdown button */
 .dropdown .dropbtn {
     font-size: 16px;
     border: none;
@@ -52,13 +49,11 @@ header {
 
 }
 
-/* background color for navbar links on hover */
 .navbar a:hover,
 .dropdown:hover .dropbtn {
     background-color: red;
 }
 
-/* Dropdown content */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -69,7 +64,6 @@ header {
 
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
     float: none;
     color: black;
@@ -79,16 +73,13 @@ header {
     text-align: left;
 }
 
-/* background color for dropdown links on hover */
 .dropdown-content a:hover {
     background-color: #aa1e1e;
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 
 a {
     text-decoration: none;
@@ -116,16 +107,18 @@ li {
     padding: 5px;
 }
 
-iframe {
-    float: right;
-    width: 30%;
-    height: 250px;
-}
-
-.video {
+.video-1 {
     float: left;
     width: 30%;
     height: 250px;
+    margin-left: 15px;
+}
+
+.video-2 {
+    float: right;
+    width: 30%;
+    height: 250px;
+    margin-right: 15px;
 }
 
 ul {
@@ -133,12 +126,11 @@ ul {
 }
 
 .list {
-    margin-left: 380px;
-
+    margin-left: 15px;
 }
 
 .ol {
-    margin-right: 380px;
+    margin-right: 15px;
 }
 
 .ol,
@@ -146,10 +138,8 @@ ul {
     background-color: #F4F6DA;
     width: auto;
     height: 250px;
-    border: 1px solid;
     overflow: auto;
 }
-
 
 .last {
     margin-top: 15px;
@@ -161,11 +151,9 @@ ul {
 
 form {
     text-align: center;
-
 }
 
 .header {
-
     display: inline-block;
 }
 
@@ -175,7 +163,7 @@ section {
 
 .form input[type=text],
 select {
-    width: 100%;
+    width: 20%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -185,7 +173,7 @@ select {
 }
 
 .form input[type=submit] {
-    width: 100%;
+    width: 20%;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -195,8 +183,26 @@ select {
     cursor: pointer;
 }
 
+.form input[type=email] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
 .form input[type=submit]:hover {
     background-color: #45a049;
+}
+
+.form input[type=radio] {
+    margin-top: 10px;
+}
+
+.form input[type=checkbox] {
+    margin-top: 20px;;
 }
 
 .form div {
@@ -211,10 +217,143 @@ footer {
     clear: both;
     border-top: 2px solid black;
     padding-top: .7em;
+    margin-bottom: 50px;
 }
 
 footer address {
     font-size: 80%;
     text-align: right;
     margin-left: 600px;
+}
+
+@media screen and (max-width: 767px) {
+    iframe {
+        display: none;
+    }
+
+    img {
+        display:none;
+    }
+    .ol {
+        width:80%;
+        margin-left: 15px;
+        margin-right: 150x;
+    }
+    .list {
+        width:80%;
+        margin-left: 15px;
+        margin-right: 150x;
+    }
+    footer address {
+        text-align: center;
+        margin-left: 0px;
+    }
+    .form input[type=text],
+    select {
+        width: 40%;
+    }
+
+    .form input[type=submit] {
+        width: 40%;
+    }
+
+    .form input[type=email] {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    iframe {
+        display: none;
+    }
+
+    img {
+        display:none;
+    }
+
+    footer address {
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    h1 {
+        font-size:medium;
+    }
+
+    p {
+        font-size: smaller;
+    }
+
+    .form input[type=text],
+    select {
+        width: 40%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .form input[type=submit] {
+        width: 40%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .form input[type=email] {
+        width: 40%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .form input[type=radio] {
+        margin-top: 10px;
+        font-size: smaller;
+    }
+
+    .form input[type=checkbox] {
+        margin-top: 20px;
+        font-size: smaller;
+    }
+    footer address {
+        font-size: smaller;
+    }
+}
+
+@media screen and (min-width:768px){
+    .video-1 {
+        width:45%;
+    }
+    .video-2 {
+        width:45%;
+    }
+    .ol {
+        width:45%;
+    }
+    .list {
+        width:45%;
+    }
+}
+@media screen and (min-width:1280px){
+    .video-1 {
+        width:30%;
+    }
+    .video-2 {
+        width:30%;
+    }
+    .ol {
+        width:65%;
+    }
+    .list {
+        width:64%;
+    }
 }

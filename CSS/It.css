@@ -3,9 +3,8 @@ body {
     font-size: 100%;
     width: auto;
     background-color: azure;
-    margin: lem auto;
-    padding: 15px 0;
-
+    margin: 0px;
+    padding: 0px;
 }
 
 header {
@@ -45,7 +44,6 @@ header {
 
 }
 
-/* Dropdown content */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -56,7 +54,6 @@ header {
 
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
     float: none;
     color: black;
@@ -66,12 +63,10 @@ header {
     text-align: left;
 }
 
-/* background color for dropdown links on hover */
 .dropdown-content a:hover {
     background-color: #aa1e1e;
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -127,13 +122,6 @@ footer {
     margin-bottom: 50px;
 }
 
-address {
-    vertical-align: top;
-    display: inline-block;
-    font-size: larger;
-    text-align: center;
-}
-
 .header {
     display: inline-block;
 }
@@ -151,18 +139,12 @@ aside {
 .section1,
 .section2 {
     background-color: #E9E4F3;
-    width: auto;
+    /*width: auto;*/
     height: 300px;
-    border: 1px solid;
     overflow: auto;
     margin-top: 20px;
-}
-
-.section1,
-.section2 {
     width: 55%;
     float: left;
-
 }
 
 .aside1,
@@ -172,7 +154,7 @@ aside {
 }
 
 img {
-    width: 400px;
+    width: 600px;
     height: 300px;
     margin-top: 20px;
 }
@@ -181,10 +163,80 @@ footer {
     clear: both;
     border-top: 2px solid black;
     padding-top: .7em;
+    margin-bottom: 50px;
 }
 
 footer address {
     font-size: 80%;
     text-align: right;
     margin-left: 600px;
+}
+@media screen  and (max-width:540px){
+    img {
+        display: none;
+    }
+    .section1 {
+        width:100%;
+    }
+    .section2 {
+        width:100%;
+    }
+    .aside2 {
+        width:100%;
+        text-align: center;
+    }
+    footer address{
+        width:100%;
+        margin: 0px;
+        text-align: center;
+    }
+    main {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    #link {
+        font-size: medium;
+    }
+    .jobInfo {
+        font-size: large;
+    }
+}
+@media screen and (min-width:768px){
+    .section1 {
+        width: 48%;
+        margin-left: 15px;
+    }
+    .section2 {
+        width: 48%;
+        margin-left: 15px;
+    }
+    .aside1 {
+        width: 48%;
+        margin-right: 15px;
+    }
+    .aside2 {
+        width: 48%;
+        margin-right: 15px;
+    }
+    img {
+        width: 100%;
+    }
+    h3 {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    p {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    footer address {
+        margin-right: 15px;
+        margin-left: 0px;
+    }
+    #link {
+        font-size: medium;
+    }
+    .jobInfo {
+        font-size: large;    
+    }
 }
