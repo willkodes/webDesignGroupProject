@@ -201,3 +201,40 @@ footer {
 .center-text {
     text-align: center;
 }
+
+@media only screen and (min-width: 1024px) {
+    /* Adjust the layout for larger screens */
+    body {
+        width: 100%;
+    }
+    .wrapper-main {
+        width: 100%; 
+        margin: 0 auto; 
+    }
+  
+  }
+  
+  /* Add CSS rules for tablets and smaller desktop screens */
+  @media only screen and (max-width: 1023px) {
+    /* Adjust the layout for smaller screens */
+    body {
+        width: 100%;
+    }
+    .wrapper-main {
+        width: 100%; 
+        margin: 0 auto; 
+    }
+  
+  }
+  
+  /* mobile devices */
+  @media only screen and (max-width: 767px) {
+    /* Adjust the layout for mobile screens */
+    body {
+        width: 100%;
+    }
+    .wrapper-main {
+        width: 100%; 
+        margin: 0 auto; 
+    }
+  }
