@@ -146,5 +146,11 @@ footer{
     .table2 th, .table2 td{
         font-size: smaller;
     }
+    .container p{
+        font-size: smaller;
+    }
+    h2, h3, span{
+        font-size: smaller;
+    }
 }
 
