@@ -8,37 +8,20 @@
 }
 
 /* Links inside the navbar */
-.navbar a {
-  float: left;
+.navbar a, .dropdown .dropbtn, .SignIn, .SignUp {
   font-size: 16px;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-}
-
-/* The dropdown container */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-  font-size: 16px;
+  background-color: inherit;
   border: none;
   outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; 
-  margin: 0; 
-  
 }
 
-/* background color for navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+/* Dropdown container */
+.dropdown {
+  float: left;
 }
 
 /* Dropdown content */
@@ -49,43 +32,42 @@
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  float: none;
   color: black;
   padding: 12px 16px;
-  text-decoration: none;
   display: block;
   text-align: left;
-}
-
-/* background color for dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #aa1e1e;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.navbar .SignIn{
-  color: white;
-  font-size: 16px;
-  border: none;
-  outline: none;
-  background-color: #8a4f4f;
-  
+
+/* Background color for navbar links and dropdown button on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
 }
-.navbar .SignUp{
-  color: white;
-  font-size: 16px;
-  border: none;
-  outline: none;
-  background-color: #8a4f4f;
-  text-align: center;
-  display: block;
-  padding: 14px 16px;
+
+/* Background color for dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #aa1e1e;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .navbar a, .dropdown .dropbtn, .SignIn, .SignUp {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a, .dropdown .dropbtn, .SignIn, .SignUp {
+    padding: 8px;
+    font-size: 12px;
+  }
 }

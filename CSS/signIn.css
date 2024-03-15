@@ -138,3 +138,6 @@ p {
 .login-box button:hover{
     background-color: grey;
   }
+  .register-link{
+    margin-bottom: 10px;
+  }
