@@ -1,76 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* Body and Header setting */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #afa4e0;
-  width: auto;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cdb0b0;
 }
 
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 2.5%;
+    text-align: center;
 }
-.main-container{
-   display: flex;
+
+.main-container {
+  display: flex;
 }
 
 .wrapper-main {
-  width: 100%; 
-  margin: 0 auto; 
+  width: 100%;
+  margin: 0 auto;
 }
 
 /*-----------------------------------*/
 /* List setting */
-nav ul li a:hover {
-  color: #000;
-  font-weight: bold;
-}
-
 nav {
   background-color: #d6d6d6;
-  padding: 10px;
   text-align: center;
 }
-
 nav ul {
-  list-style-type: none;
   padding: 0;
   margin: 0;
 }
-
 nav ul li {
   display: inline;
-  margin-right: 20px;
+  margin-right: 10%;
+  list-style-type: none;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #333;
 }
-
 nav ul li a:hover {
-  color: #000;
+  color: #000; 
+  font-weight: bold; 
 }
 
 ul {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 2.5%;
+  margin-bottom: 10%;
 }
 
 li {
-  margin-bottom: 10px;
+  margin-bottom: 5%;
 }
 
 /*-----------------------------------*/
 /* Container for body word */
 .container {
-  width: auto;
-  margin-top: 20px;
-  margin-right: 90px;
-  padding: 20px;
+  max-width: 80%;
+  margin: 2.5% auto;
+  padding: 5%;
   background-color: #fff;
   border-radius: 5px;
 }
@@ -101,16 +97,14 @@ p {
   display: flex;
   justify-content: space-evenly;
   margin: 5px;
-
 }
 
 .feature-item {
   flex-basis: 45%;
   text-align: left;
-  padding: 15px;
+  padding: 5%;
   background-color: #cec2c2;
-  border-radius: 0px;
-  margin: 10px 15px;
+  border-radius: 5px;
 }
 
 .feature-item h3 {
@@ -127,9 +121,8 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: auto;
+  margin:  auto;
 }
-
 video {
   width: 100%;
   height: auto;
@@ -140,10 +133,10 @@ video {
 .box {
   display: inline-block;
   background-color: #ad7070;
-  padding: 20px;
+  padding: 2.5%;
   border-radius: 5px;
   text-align: left;
-  margin-top: 20px;
+  margin-top: 5%;
 }
 
 .box a {
@@ -155,121 +148,148 @@ video {
 footer {
   background-color: #242121;
   color: #fff;
-  padding: 0px;
+  padding: 0;
   text-align: center;
   position: relative;
   width: 100%;
-  height: 70px;
-  padding-top: 20px;
+  height: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
-
 /*-----------------------------------*/
 /*comment setting*/
 .comment-section {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
+  max-width: 80%;
+  margin: 2.5% auto;
+  padding: 2.5%;
   background-color: #fff;
   border-radius: 5px;
 }
 
 #comment {
-  margin: 20px 0px;
-  width: 95%;
-  height: 100px;
-  padding: 20px;
+  margin: 2.5% 0;
+  width: 95%; 
+  height: 10%;
+  padding: 2.5%; 
 }
 
 #name,
 #email,
 #website {
-  padding: 10px;
-  margin-right: 10px;
-  display: inline-block;
+  padding: 2.5%;
+  margin-right: 2.5%; 
+  display: inline-block; 
 }
 
 #comment-form button {
   background-color: #007bff;
   color: #fff;
   border: none;
-  padding: 10px 20px;
-  margin-top: 20px;
-}
-/*----------------------------------------*/
-/*Side bar*/
-.sidebar {
-  top: 186px;
-  height: 500px;
-  width: 700px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  margin-left: 50px;
-  margin-right: 50px;
-  position: sticky;
+  padding: 2.5% 5%;
+  margin-top: 5%;
 }
 
-.sidebar h2 {
-  font-size: 180%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+
+/*-------Aside(QuickLink)---------*/
+aside {
+  background-color: #f2f2f2;
+  padding: 2.5%;
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(100% + 2.5%);
+  width: 20%;
+  margin-left: 5%;
+  transition: left 0.3s ease;
 }
 
-.sidebar ul {
-  text-align: center;
-  list-style-type: none;
+aside ul {
   padding: 0;
+  margin: 0;
 }
 
-.sidebar ul a {
+aside ul li {
+  margin-bottom: 3%;
+  list-style: none;
+}
+
+aside ul li a {
+  display: block;
   text-decoration: none;
-  font-size: 140%;
-  color: inherit;
+  color: #333;
+  padding: 3% 6%;
+  border-radius: 1vw;
+  background-color: #ddd;
+  transition: background-color 0.3s ease;
 }
 
-.sidebar ul li {
-  padding-top: 25px;
-  padding-bottom: 25px;
+aside ul li a:hover {
+  background-color: #bbb;
 }
 
-.sidebar ul li:hover {
-  background-color: #a94dad;
+.scrolled aside {
+  left: calc(100% - 22.5%);
 }
 
-
-
-@media only screen and (min-width: 1024px) {
-  /* Adjust the layout for larger screens */
-  body {
-      width: 100%;
-  }
-  .wrapper-main {
-      width: 100%; 
-      margin: 0 auto; 
-  }
-
+.slide-out {
+  left: 0;
 }
 
-/* Add CSS rules for tablets and smaller desktop screens */
+.slide-down {
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+button#toggleAside {
+  position: fixed;
+  top: 3%;
+  right: 3%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 1.5% 3%;
+  font-size: 1.5vw;
+  border-radius: 1vw;
+  cursor: pointer;
+  z-index: 999;
+  transition: top 0.3s ease;
+}
+
+button#toggleAside:hover {
+  background-color: #0056b3;
+}
+
 @media only screen and (max-width: 1023px) {
-  /* Adjust the layout for smaller screens */
-  body {
-      width: 100%;
-  }
-  .wrapper-main {
-      width: 100%; 
-      margin: 0 auto; 
+  aside {
+      width: 30%;
+      margin-left: 2.5%;
+      left: calc(100% + 2.5%);
   }
 
+  .scrolled aside {
+      left: calc(100% - 32.5%);
+  }
+
+  aside ul li a {
+      padding: 2% 4%;
+      font-size: 2vw;
+  }
 }
 
-/* mobile devices */
 @media only screen and (max-width: 767px) {
-  /* Adjust the layout for mobile screens */
-  body {
-      width: 100%;
+  aside {
+      width: 80%;
+      margin-left: 5%;
+      left: calc(100% + 5%);
   }
-  .wrapper-main {
-      width: 100%; 
-      margin: 0 auto; 
+
+  .scrolled aside {
+      left: calc(100% - 85%);
+  }
+
+  aside ul li a {
+      padding: 1.5% 3%;
+      font-size: 3vw;
   }
 }
