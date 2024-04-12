@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* Body and Header setting */
 body {
     font-family: Arial, sans-serif;
@@ -9,19 +14,13 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 2.5%;
     text-align: center;
 }
 /*-----------------------------------*/
 /* List setting */
-nav ul li a:hover {
-    color: #000; 
-    font-weight: bold; 
-}
-
 nav {
     background-color: #d6d6d6;
-    padding: 10px;
     text-align: center;
 }
 nav ul {
@@ -31,31 +30,32 @@ nav ul {
 }
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 10%;
 }
 nav ul li a {
     text-decoration: none;
     color: #333;
 }
 nav ul li a:hover {
-    color: #000;
+    color: #000; 
+    font-weight: bold; 
 }
 ul {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 2.5%;
+    margin-bottom: 10%;
 }
+
 li {
-    margin-bottom: 10px;
+    margin-bottom: 5%;
 }
 /*-----------------------------------*/
 /* Container for body word */
 .container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+    max-width: 80%;
+    margin: 2.5% auto;
+    padding: 2.5%;
     background-color: #fff;
     border-radius: 5px;
-    display: block;
 }
 h1, h2 {
     color: #ac5656;
@@ -70,12 +70,12 @@ p {
 .feature {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 10px;
+    margin: 1%;
 }
 .feature-item {
     flex-basis: 20%;
     text-align: center;
-    padding: 20px;
+    padding: 2.5%;
     background-color: #f9f9f9;
     border-radius: 100px; 
 }
@@ -96,17 +96,17 @@ img {
 video {
     width: 100%;
     height: auto;
-  }
+}
 
 /*--------------------------------*/
 /* Link box setting and Text Link*/
 .box {
     display: inline-block;
     background-color: #ad7070;
-    padding: 20px;
+    padding: 2.5%;
     border-radius: 5px;
     text-align: left;
-    margin-top: 20px;
+    margin-top: 5%;
 }
 .box a {
     text-decoration: none; 
@@ -117,118 +117,145 @@ video {
 footer {
     background-color: #242121;
     color: #fff;
-    padding: 0px;
+    padding: 0;
     text-align: center;
     position: relative;
     width: 100%;
-    height: 70px;
-    padding-top: 20px;
+    height: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 /*-----------------------------------*/
-.comment-section{
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+.comment-section {
+    max-width: 80%;
+    margin: 2.5% auto;
+    padding: 2.5%;
     background-color: #fff;
     border-radius: 5px;
 }
 
 #comment {
-    margin: 20px 0px;
+    margin: 2.5% 0;
     width: 95%; 
-    height: 100px;
-    padding: 20px; 
+    height: 10%;
+    padding: 2.5%; 
 }
 
 #name,
-    #email,
-    #website {
-        padding: 10px;
-        margin-right: 10px; 
-        display: inline-block; 
-    }
+#email,
+#website {
+    padding: 2.5%;
+    margin-right: 2.5%; 
+    display: inline-block; 
+}
 
 #comment-form button {
     background-color: #007bff;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    margin-top: 20px;
+    padding: 2.5% 5%;
+    margin-top: 5%;
+}
+/*-------Aside(QuickLink)---------*/
+aside {
+    background-color: #f2f2f2;
+    padding: 2.5%;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: calc(100% + 2.5%);
+    width: 20%;
+    margin-left: 5%;
+    transition: left 0.3s ease;
 }
 
+aside ul {
+    padding: 0;
+    margin: 0;
+}
 
-    /*---------------------------------*/
-    /*Aside*/
-    .container, aside {
-        margin-bottom: 1em; 
-    }
+aside ul li {
+    margin-bottom: 3%;
+    list-style: none;
+}
+
+aside ul li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 3% 6%;
+    border-radius: 1vw;
+    background-color: #ddd;
+    transition: background-color 0.3s ease;
+}
+
+aside ul li a:hover {
+    background-color: #bbb;
+}
+
+.scrolled aside {
+    left: calc(100% - 22.5%);
+}
+
+.slide-out {
+    left: 0;
+}
+
+.slide-down {
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+button#toggleAside {
+    position: fixed;
+    top: 3%;
+    right: 3%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 1.5% 3%;
+    font-size: 1.5vw;
+    border-radius: 1vw;
+    cursor: pointer;
+    z-index: 999;
+    transition: top 0.3s ease;
+}
+
+button#toggleAside:hover {
+    background-color: #0056b3;
+}
+
+@media only screen and (max-width: 1023px) {
     aside {
-        position: fixed;
-        top: 186px;
-        height: 500px; 
-        width: 480px;
-        background-color: #ffffff;
-        border-radius: 10px;
-        margin-left: 100px;
-        margin-left: 100px;
-    }
-    aside h2 {
-        font-size: 180%;
-        padding-top: 10px;
-        padding-bottom: 10px; 
+        width: 30%;
+        margin-left: 2.5%;
+        left: calc(100% + 2.5%);
     }
 
-    aside ul {
-        text-align: center;
-        list-style-type: none;
-        padding: 0;
-      }
-aside ul a {
-  text-decoration: none; 
-  font-size: 140%;
-  color: inherit; /* Inherit color from parent */
-}
-aside ul li{
-    padding-top: 25px;
-    padding-bottom: 20px;
-}
-aside ul li:hover {
-    background-color: #765b5b;
+    .scrolled aside {
+        left: calc(100% - 32.5%);
+    }
+
+    aside ul li a {
+        padding: 2% 4%;
+        font-size: 2vw;
+    }
 }
 
-@media only screen and (min-width: 1024px) {
-    /* Adjust the layout for larger screens */
-    body {
-        width: 100%;
+@media only screen and (max-width: 767px) {
+    aside {
+        width: 80%;
+        margin-left: 5%;
+        left: calc(100% + 5%);
     }
-    .wrapper-main {
-        width: 100%; 
-        margin: 0 auto; 
+
+    .scrolled aside {
+        left: calc(100% - 85%);
     }
-  
-  }
-  
-  /* Add CSS rules for tablets and smaller desktop screens */
-  @media only screen and (max-width: 1023px) {
-    /* Adjust the layout for smaller screens */
-    body {
-        width: 100%;
+
+    aside ul li a {
+        padding: 1.5% 3%;
+        font-size: 3vw;
     }
-    .wrapper-main {
-        width: 100%; 
-        margin: 0 auto; 
-    }
-  
-  }
-  
-  /* mobile devices */
-  @media only screen and (max-width: 767px) {
-    /* Adjust the layout for mobile screens */
-    body {
-        width: 100%;
-    }
-    .wrapper-main {
-        width: 100%; 
-        margin: 0 auto; 
-    }
-  }
+}
