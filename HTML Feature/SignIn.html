@@ -6,6 +6,18 @@
     <title>Group 9</title>
     <link rel="stylesheet" href="../CSS/signIn.css">
     <link rel="stylesheet" href="../CSS/Slidebar.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <style>
+        /* Updated CSS with percentage measurements */
+        hr {
+            height: 0.3%;
+        }
+        .input-box input[type="text"],
+        .input-box input[type="password"] {
+            background-size: 2%;
+            margin-top: -3%;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -25,40 +37,70 @@
                     <a href="securityArchitect.html">Cyber Security Architect</a>
                 </div>
             </div>
-            <button type="button" class="SignIn" >Sign In</button>
-            <button type="button" class="SignUp" >Sign Up</button>
+            <button type="button" class="SignIn">Sign In</button>
+            <button type="button" class="SignUp">Sign Up</button>
         </div>
         <div class="container">
             <div class="Sign-in">
                 <h2 style="color: black;">Sign In</h2>
             </div>
-            <hr style="height: 3px;">
+            <hr>
             <div class="input-box">
-                <input type="text" style="background-image: url('https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png');"placeholder="Username" required>
+                <input type="text" style="background-image: url('https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png'); background-size: 10%;" placeholder="Username" required>
             </div>
             <div class="input-box">
-                <input type="password" style="background-image: url('https://static.vecteezy.com/system/resources/previews/000/566/954/non_2x/lock-icon-vector.jpg');margin-top: -30px;"placeholder="Password" required>
+                <input type="password" style="background-image: url('https://static.vecteezy.com/system/resources/previews/000/566/954/non_2x/lock-icon-vector.jpg'); margin-top: -3%; background-size: 11%;" placeholder="Password" required>
             </div>
             <hr>
             <span>Or</span>
             <div class="login-box">
-                <button><img src="https://cdn.iconscout.com/icon/free/png-256/free-google-1772223-1507807.png"> Sign in with Google</button>
-                <button><img src="https://www.ept.ca/wp-content/uploads/2020/06/Apple-logo.png" > Sign in with Apple</button>
+                <button id="googleSignInBtn"><img src="https://cdn.iconscout.com/icon/free/png-256/free-google-1772223-1507807.png"> Sign in with Google</button>
+                <button><img src="https://www.ept.ca/wp-content/uploads/2020/06/Apple-logo.png"> Sign in with Apple</button>
             </div>
             <div class="remember">
                 <label><input type="checkbox"> Remember me</label>
                 <a href="#">Forget Password?</a>
             </div>
-            <button type="submit" class="btn" >Login</button>
+            <button type="submit" class="btn">Login</button>
             <div class="register-link">
                 <p>Don't have an account? <a href="SignUp.html">Register</a></p>
             </div>
         </div>
     </form>
-</body>
-
     <footer>
         <p>&copy; 2024 Database Administrator - All Rights Reserved</p>
     </footer>
+
+    <!-- Add the Google Sign-In API script -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!-- Add your JavaScript code for Google Sign-In -->
+    <script>
+        // Function to initialize Google Sign-In
+        function initGoogleSignIn() {
+            gapi.load('auth2', function() {
+                auth2 = gapi.auth2.init({
+                    client_id: 'YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com', // Replace with your Google Client ID
+                    cookiepolicy: 'single_host_origin',
+                });
+            });
+        }
+
+        // Function to handle Google Sign-In button click
+        function onGoogleSignInClick() {
+            auth2.signIn().then(function(googleUser) {
+                console.log('User signed in.');
+                // You can add code here to handle the signed-in user, such as sending their information to your server.
+            }, function(error) {
+                console.error('Error signing in:', error);
+            });
+        }
+
+        // Initialize Google Sign-In when the page loads
+        initGoogleSignIn();
+
+        // Add event listener to the Google Sign-In button
+        document.getElementById('googleSignInBtn').addEventListener('click', onGoogleSignInClick);
+    </script>
 </body>
 </html>
