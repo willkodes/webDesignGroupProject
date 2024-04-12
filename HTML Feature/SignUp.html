@@ -6,6 +6,24 @@
     <title>Group 9</title>
     <link rel="stylesheet" href="../CSS/SignUp.css">
     <link rel="stylesheet" href="../CSS/Slidebar.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%; /* Assuming the container takes 80% of the viewport width */
+            margin: 0 auto; /* Centering the container */
+        }
+        
+        /* Adjust the background image size for input fields */
+        .input-box input[type="email"],
+        .input-box input[type="text"],
+        .input-box input[type="password"] {
+            background-size: 10%; /* Assuming 10% of the input box width */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -30,20 +48,20 @@
             <div class="Sign-in">
                 <h2 style="color: black;">Register</h2>
             </div>
-            <hr style="height: 3px;">
+            <hr style="height: 1%; /* Assuming 1% of container width */">
             <div class="input-box">
-                <input type="email" style="background-image: url('https://cdn-icons-png.flaticon.com/512/3178/3178158.png'); background-size: 45px;"placeholder="Email" required>
+                <input type="email" style="background-image: url('https://cdn-icons-png.flaticon.com/512/3178/3178158.png'); background-size: 10%; /* Assuming 2% of input box width */" placeholder="Email" required>
             </div>
             <div class="input-box">
-                <input type="text" style="background-image: url('https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png');"placeholder="Username" required>
+                <input type="text" style="background-image: url('https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png');" placeholder="Username" required>
             </div>
             <div class="input-box">
-                <input type="password" style="background-image: url('https://static.vecteezy.com/system/resources/previews/000/566/954/non_2x/lock-icon-vector.jpg'); background-size: 55px;"placeholder="Password" required>
+                <input type="password" style="background-image: url('https://static.vecteezy.com/system/resources/previews/000/566/954/non_2x/lock-icon-vector.jpg'); background-size: 12%; /* Assuming 3% of input box width */" placeholder="Password" required>
             </div>
             <div class="agree">
                 <label><input type="checkbox"> I have read and agreed to the<a href="#"> terms and conditions</a></label>
             </div>
-            <button type="submit" class="btn" >Sign Up</button>
+            <button type="submit" class="btn">Sign Up</button>
             <hr>
             <span>Or</span>
             <div class="signin-link">
@@ -51,10 +69,5 @@
             </div>
         </div>
     </form>
-</body>
 
-    <footer>
-        <p>&copy; 2024 Database Administrator - All Rights Reserved</p>
-    </footer>
-</body>
-</html>
+ 
