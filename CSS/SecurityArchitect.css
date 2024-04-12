@@ -24,6 +24,11 @@ html, body {
     padding: 0;
     background-color: rgba(32, 93, 52, 0.293)
 }
+
+.container{
+    background-color: white;
+}
+
 .container p{
     font-size: large;
     margin-left: 15%;

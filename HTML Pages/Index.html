@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
+    <link rel="stylesheet" href="../CSS/darkmode.css">
     <link rel="stylesheet" href="../CSS/Index.css">
     <link rel="stylesheet" href="../CSS/Slidebar.css">
     <script src="../JS/Calculator.js"></script>
@@ -15,6 +16,7 @@
         <header>
             <h1>Group 9</h1>
         </header>
+        <button id="dark-mode-toggle">Dark Mode</button>
         <div class="navbar">
             <a href="Index.html">Home</a>
             <a href="jobs.html">Jobs Hiring</a>
@@ -32,11 +34,11 @@
         </div>
         <div class="container">
             <h1>Welcome to Our Website!</h1>
-            <p>This Website will focus about providing different career type related to IT industry to help user have a
+            <p class="dark-mode-class">This Website will focus about providing different career type related to IT industry to help user have a
                 clear understanding and more option in their hiring path!</p>
-            <p>We have do lots of research on many different categories of IT field and there are 6 type of job that
+            <p class="dark-mode-class">We have do lots of research on many different categories of IT field and there are 6 type of job that
                 stand out uniquely which is a good job goal for beginner worker and intermediate IT engineer</p>
-            <p><b>Below is a list of job and salary:</b></p>
+            <p class="dark-mode-class"><b>Below is a list of job and salary:</b></p>
             <div class="feature">
                 <div class="feature-item">
                     <h3>Career list</h3>
@@ -215,7 +217,7 @@
           </div>
           <p class="converted-amount"></p>
           
-            <p><b>For more information about IT career, we have a list of career type in the Navigation bar to provide
+            <p class="dark-mode-class"><b>For more information about IT career, we have a list of career type in the Navigation bar to provide
                     you a deeper understanding of the job.</b></p>
         </div>
         <div class="comment-section">
@@ -223,24 +225,23 @@
             <p>Your email address will not be published. Required fields are marked *</p>
             <div class="input">
                 <form id="comment-form">
-                    <label for="comment">Comment:</label><br>
+                    <label for="comment"><span style="color: black;">Comment:</span></label><br>
                     <textarea id="comment" name="comment" required></textarea><br>
-
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required autocomplete="name">
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required autocomplete="email">
-
-                    <label for="website">Website:</label>
-                    <input type="url" id="website" name="website" required autocomplete="url">
-
-                    <button type="submit">Post Comment >></button>
+                    <label for="name"><span style="color: black;">Name:</span></label>
+                    <input type="text" id="name" name="name" required>
+                    <br><br>
+                    <label for="email"><span style="color: black;">Email:</span></label>
+                    <input type="text" id="email" name="email" required>
+                    <br>
+                    <label for="website"><span style="color: black;">Website:</span></label>
+                    <input type="text" id="website" name="website" required>
+                    <button type="submit"><p>Post Comment </p>>></button>
                 </form>
             </div>
         </div>
+        <script src="../javascript/darkmode.js"></script>
         <footer>
-            <p>&copy; 2024 Database Administrator - All Rights Reserved</p>
+            <p style="color: white;">&copy; 2024 Database Administrator - All Rights Reserved</p>
         </footer>
     </div>
 

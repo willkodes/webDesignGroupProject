@@ -18,11 +18,16 @@ header {
     background-size: cover;
     background-position: center; 
 }
-html, body {
+body {
     margin: 0;
     padding: 0;
     background-color: rgba(60, 93, 214, 0.293)
 }
+
+.container{
+    background-color: white;
+}
+
 .container p{
     font-size: large;
     margin-left: 15%;
