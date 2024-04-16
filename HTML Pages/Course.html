@@ -1,0 +1,158 @@
+<html lang="en">
+
+<head>
+    <title>Course Plan</title>
+    <link rel="stylesheet" href="../CSS/Course.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>Course Plan</header>
+    <div class="navbar">
+        <a href="Index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Career Type</button>
+            <div class="dropdown-content">
+                <a href="FullStackDeveloper.html">Full Stack Developer</a>
+                <a href="ItTechnician.html">IT Technician</a>
+                <a href="AdminData.html">Database Administrator</a>
+                <a href="WebDev.html">Web Developer</a>
+                <a href="dataScientist.html">Data Scientist</a>
+                <a href="securityArchitect.html">Cyber Security Architect</a>
+            </div>
+        </div>
+        <a href="Course.html">Course</a>
+    </div>
+    <div class="entire">
+        <form>
+            <aside class="left">
+                <label for="name">Name:</label><br>
+                <input id="name" type="text" placeholder="Enter your name">
+                <label for="email">Email:</label><br>
+                <input id="email" type="email" placeholder="Enter your email">
+                <label for="age">Age:</label><br>
+                <input id="age" type="text" placeholder="Enter your age">
+                <label for="option">Which option best decript you:</label><br>
+                <select id="option">
+                    <option value="select">Select</option>
+                    <option value="student">Student</option>
+                    <option value="programmer">Programmer</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="teamLeader">Team leader</option>
+                    <option value="other">Other</option>
+                </select>
+                <label>Would you recommend GeeksforGeeksto a friend?</label><br>
+                <label for="recommed1">
+                    <input type="radio" id="recommed1" name="recommed">Yes</input>
+                </label><br>
+                <label for="recommed2">
+                    <input type="radio" id="recommed2" name="recommed">No</input>
+                </label><br>
+                <label for="recommed3">
+                    <input type="radio" id="recommed3" name="recommed">Maybe</input>
+                </label><br>
+                <label>Languages and Frameworks known
+                    <small>(Check all that apply)</small>
+                </label><br>
+                <label for="checkBox1">
+                    <input type="checkbox" id="checkBox1">C</input>
+                </label><br>
+                <label for="checkBox2">
+                    <input type="checkbox" id="checkBox2">C++</input>
+                </label><br>
+                <label for="checkBox3">
+                    <input type="checkbox" id="checkBox3">Java</input>
+                </label><br>
+                <label for="checkBox4">
+                    <input type="checkbox" id="checkBox4">JavaScript</input>
+                </label><br>
+                <label for="checkBox5">
+                    <input type="checkbox" id="checkBox5">React</input>
+                </label><br>
+                <label for="checkBox6">
+                    <input type="checkbox" id="checkBox6">Angular</input>
+                </label><br>
+                <label for="checkBox7">
+                    <input type="checkbox" id="checkBox7">Spring</input>
+                </label><br>
+                <label for="comment">Any comments or suggestions</label>
+                <textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+                <button type="submit" value="submit">Submit</button>
+            </form>
+        </aside>
+        <aside class="right">
+            <select id="courseOption" onchange="handleChanges()">
+                <option id="default">Course you want to know</option>
+                <option id="course1" value="C">C</option>
+                <option id="course2" value="CExtended">C++</option>
+                <option id="course3" value="Java">Java</option>
+                <option id="course4" value="JavaScript">JavaScript</option>
+                <option id="course5" value="React">React</option>
+                <option id="course6" value="Angular">Angular</option>
+                <option id="course7" value="Spring">Spring</option>
+            </select>
+            <iframe id="video" src="https://www.youtube.com/embed/KJgsSFOSQv0" frameborder="0" allowfullscreen></iframe>
+            <span id="priceDetail"></span>
+            <button id="toBuy" onclick="paymentPage()">Buy it!</button>
+        </aside>
+    </div>
+    <script>
+        function handleChanges(){
+            let value = document.getElementById("courseOption").options[document.getElementById("courseOption").selectedIndex].value;
+            let iframe = document.getElementById("video");
+            let priceDetail = document.getElementById("priceDetail");
+            let toBuy = document.getElementById("toBuy");
+            if (value == "C") { 
+                iframe.style.display = "block";
+                iframe.src = 'https://www.youtube.com/embed/KJgsSFOSQv0';
+                priceDetail.style.display = "inline-block";
+                priceDetail.innerHTML = "Full price for this video: $99";
+                toBuy.style.display = "inline-block";
+            } else if (value == "CExtended") {
+                iframe.style.display = "inline-block";
+                iframe.src = 'https://www.youtube.com/embed/ZzaPdXTrSb8';
+                priceDetail.style.display = "inline-block";
+                priceDetail.innerHTML = "Full price for this video: $80";
+                toBuy.style.display = "inline-block";
+            } else if (value == "Java") {
+                iframe.style.display = "inline-block";
+                iframe.src = 'https://www.youtube.com/embed/eIrMbAQSU34';
+                priceDetail.style.display = "inline-block";
+                priceDetail.innerHTML = "Full price for this video: $99";
+                toBuy.style.display = "inline-block";
+            } else if (value == "JavaScript") {
+                iframe.style.display = "inline-block";
+                iframe.src = 'https://www.youtube.com/embed/W6NZfCO5SIk';
+                priceDetail.style.display = "inline-block";
+                priceDetail.innerHTML = "Full price for this video: $75";
+                toBuy.style.display = "inline-block";
+            } else if (value == "React") {
+                iframe.style.display = "inline-block";
+                iframe.src = 'https://www.youtube.com/embed/SqcY0GlETPk';
+                priceDetail.style.display = "inline-block";
+                priceDetail.innerHTML = "Full price for this video: $50";
+                toBuy.style.display = "inline-block";
+            } else if (value == "Angular") {
+                iframe.style.display = "inline-block";
+                iframe.src = 'https://www.youtube.com/embed/k5E2AVpwsko';
+                priceDetail.style.display = "inline-block";
+                priceDetail.innerHTML = "Full price for this video: $30";
+                toBuy.style.display = "inline-block";
+            } else if (value == "Spring") {
+                iframe.style.display = "inline-block";
+                iframe.src = 'https://www.youtube.com/embed/If1Lw4pLLEo';
+                priceDetail.style.display = "inline-block";
+                priceDetail.innerHTML = "Full price for this video: $85";
+                toBuy.style.display = "inline-block";
+            }
+        }
+        function paymentPage() {
+            let valueToPassTemp = document.getElementById("priceDetail").textContent;
+            let valueToPass = valueToPassTemp.substring(valueToPassTemp.length - 2);
+            sessionStorage.setItem('price', valueToPass);
+            window.location.href = "../HTML Pages/payment.html";
+        }
+    </script>
+</body>
+
+</html>

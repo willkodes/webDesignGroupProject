@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Payment</title>
+        <style>
+            body {
+                margin-left: 20px;
+            }
+            h1 {
+                margin-left: 20px;
+            }
+            button {
+                margin-left: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Payment Reciept</h1>
+        <hr>
+        <form>
+        <h1 id="h1"></h1>
+        <button>Confirm to pay</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </form>
+        <script>
+            let content = "The amount is: $" + sessionStorage.getItem('price');
+            document.getElementById("h1").innerHTML = content;
+        </script>
+    </body>
+</html>
