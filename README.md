@@ -32,8 +32,11 @@
 <b>HTML</b>
 [Full Stack Developer](HTML%20Pages/FullStackDeveloper.html)
 [IT Technician](HTML%20Pages/ItTechnician.html)
+[Coures](HTML%20Pages/Course.html)
+[Payment](HTML%20Pages/payment.html)
 
 <b>CSS</b>
 [Full Stack Developer](CSS/Full.css)
 [IT Technician](CSS/It.css)
+[Course](CSS/Course.css)
 
