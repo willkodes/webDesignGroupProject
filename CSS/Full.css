@@ -211,7 +211,75 @@ select {
     padding: 20px;
 }
 
+/*-------Aside(QuickLink)---------*/
+aside {
+    background-color: #f2f2f2;
+    padding: 2.5%;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: calc(100% + 2.5%);
+    width: 20%;
+    margin-left: 5%;
+    transition: left 0.3s ease;
+}
 
+aside ul {
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li {
+    margin-bottom: 3%;
+    list-style: none;
+}
+
+aside ul li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 3% 6%;
+    border-radius: 1vw;
+    background-color: #ddd;
+    transition: background-color 0.3s ease;
+}
+
+aside ul li a:hover {
+    background-color: #bbb;
+}
+
+.scrolled aside {
+    left: calc(100% - 22.5%);
+}
+
+.slide-out {
+    left: 0;
+}
+
+.slide-down {
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+button#toggleAside {
+    position: fixed;
+    top: 3%;
+    right: 3%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 1.5% 3%;
+    font-size: 1.5vw;
+    border-radius: 1vw;
+    cursor: pointer;
+    z-index: 999;
+    transition: top 0.3s ease;
+}
+
+button#toggleAside:hover {
+    background-color: #0056b3;
+}
 
 footer {
     clear: both;

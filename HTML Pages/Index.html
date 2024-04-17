@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../CSS/Index.css">
     <link rel="stylesheet" href="../CSS/Slidebar.css">
     <script src="../JS/Calculator.js"></script>
+    <script src="../JS/QuickLinks.js"></script>
 </head>
 
 <body>
@@ -32,14 +33,30 @@
                 </div>
             </div>
         </div>
+
+        <aside>
+            <h2>Quick Links</h2>
+            <hr style="height: 3px; background-color: black;">
+            <ul>
+                <li><a href="#Career List">Career List</a></li>
+                <li><a href="#Salaries Table">Salaries Table</a></li>
+                <li><a href="#Calculator and Currency Converter">Calculator and Currency Converter</a>
+                </li>
+                <li><a href="#Comment">Leave a comment</a></li>
+            </ul>
+        </aside>
+        <button id="toggleAside" class="show-button">Show</button>
+
         <div class="container">
             <h1>Welcome to Our Website!</h1>
-            <p class="dark-mode-class">This Website will focus about providing different career type related to IT industry to help user have a
+            <p class="dark-mode-class">This Website will focus about providing different career type related to IT
+                industry to help user have a
                 clear understanding and more option in their hiring path!</p>
-            <p class="dark-mode-class">We have do lots of research on many different categories of IT field and there are 6 type of job that
+            <p class="dark-mode-class">We have do lots of research on many different categories of IT field and there
+                are 6 type of job that
                 stand out uniquely which is a good job goal for beginner worker and intermediate IT engineer</p>
             <p class="dark-mode-class"><b>Below is a list of job and salary:</b></p>
-            <div class="feature">
+            <div class="feature" id="Career List">
                 <div class="feature-item">
                     <h3>Career list</h3>
                     <ul>
@@ -52,131 +69,135 @@
                     </ul>
                 </div>
             </div>
-            <table id="table2">
-                <tr>
-                    <th>Job Name</th>
-                    <th>Programming language</th>
-                    <th>Salary</th>
+            <div id="Salaries Table">
+                <table id="table2">
+                    <tr>
+                        <th>Job Name</th>
+                        <th>Programming language</th>
+                        <th>Salary</th>
 
-                </tr>
-                <tr>
-                    <td>Full-stank Engineering</td>
-                    <td>A combination of front-end and back-end languages.<br> For example, JavaScript (Node.js) for the
-                        back end and JavaScript (React, Angular, Vue.js) for the front end.</td>
-                    <td>Junior/Entry-Level: $60,000 - $90,000<br>
-                        Mid-Level: $90,000 - $120,000<br>
-                        Senior: $120,000 - $150,000+</td>
-                </tr>
-                <tr>
-                    <td>Web Developer</td>
-                    <td>Front-end (client-side): HTML, CSS, JavaScript (and frameworks like React, Angular, or
-                        Vue.js).<br>
-                        Back-end (server-side): JavaScript (Node.js), Python (Django, Flask), Ruby (Ruby on Rails), Java
-                        (Spring), PHP (Laravel).</td>
-                    <td>Junior/Entry-Level: $50,000 - $80,000<br>
-                        Mid-Level: $80,000 - $100,000<br>
-                        Senior: $100,000 - $120,000+</td>
-                </tr>
-                <tr>
-                    <td>Database Administrator</td>
-                    <td>SQL (Structured Query Language), and knowledge of database systems like MySQL, PostgreSQL,
-                        Oracle, or MongoDB</td>
-                    <td>Junior/Entry-Level: $60,000 - $80,000<br>
-                        Mid-Level: $80,000 - $100,000<br>
-                        Senior: $100,000 - $120,000+</td>
-                </tr>
-                <tr>
-                    <td>Game Developer</td>
-                    <td>Unity (C#), Unreal Engine (C++).</td>
-                    <td>Junior/Entry-Level: $60,000 - $80,000<br>
-                        Mid-Level: $80,000 - $100,000<br>
-                        Senior: $100,000 - $120,000+</td>
-                </tr>
-                <tr>
-                    <td>System Developer</td>
-                    <td>C, C++, Assembly.</td>
-                    <td>Junior/Entry-Level: $60,000 - $80,000<br>
-                        Mid-Level: $80,000 - $100,000<br>
-                        Senior: $100,000 - $120,000+</td>
-                </tr>
-                <tr>
-                    <td>Cloud Computing</td>
-                    <td>Knowledge of cloud platforms (AWS, Azure, Google Cloud) and scripting languages like Python or
-                        PowerShell.</td>
-                    <td>Junior/Entry-Level: $70,000 - $90,000<br>
-                        Mid-Level: $90,000 - $110,000<br>
-                        Senior: $110,000 - $130,000+</td>
-                </tr>
+                    </tr>
+                    <tr>
+                        <td>Full-stank Engineering</td>
+                        <td>A combination of front-end and back-end languages.<br> For example, JavaScript (Node.js) for
+                            the
+                            back end and JavaScript (React, Angular, Vue.js) for the front end.</td>
+                        <td>Junior/Entry-Level: $60,000 - $90,000<br>
+                            Mid-Level: $90,000 - $120,000<br>
+                            Senior: $120,000 - $150,000+</td>
+                    </tr>
+                    <tr>
+                        <td>Web Developer</td>
+                        <td>Front-end (client-side): HTML, CSS, JavaScript (and frameworks like React, Angular, or
+                            Vue.js).<br>
+                            Back-end (server-side): JavaScript (Node.js), Python (Django, Flask), Ruby (Ruby on Rails),
+                            Java
+                            (Spring), PHP (Laravel).</td>
+                        <td>Junior/Entry-Level: $50,000 - $80,000<br>
+                            Mid-Level: $80,000 - $100,000<br>
+                            Senior: $100,000 - $120,000+</td>
+                    </tr>
+                    <tr>
+                        <td>Database Administrator</td>
+                        <td>SQL (Structured Query Language), and knowledge of database systems like MySQL, PostgreSQL,
+                            Oracle, or MongoDB</td>
+                        <td>Junior/Entry-Level: $60,000 - $80,000<br>
+                            Mid-Level: $80,000 - $100,000<br>
+                            Senior: $100,000 - $120,000+</td>
+                    </tr>
+                    <tr>
+                        <td>Game Developer</td>
+                        <td>Unity (C#), Unreal Engine (C++).</td>
+                        <td>Junior/Entry-Level: $60,000 - $80,000<br>
+                            Mid-Level: $80,000 - $100,000<br>
+                            Senior: $100,000 - $120,000+</td>
+                    </tr>
+                    <tr>
+                        <td>System Developer</td>
+                        <td>C, C++, Assembly.</td>
+                        <td>Junior/Entry-Level: $60,000 - $80,000<br>
+                            Mid-Level: $80,000 - $100,000<br>
+                            Senior: $100,000 - $120,000+</td>
+                    </tr>
+                    <tr>
+                        <td>Cloud Computing</td>
+                        <td>Knowledge of cloud platforms (AWS, Azure, Google Cloud) and scripting languages like Python
+                            or
+                            PowerShell.</td>
+                        <td>Junior/Entry-Level: $70,000 - $90,000<br>
+                            Mid-Level: $90,000 - $110,000<br>
+                            Senior: $110,000 - $130,000+</td>
+                    </tr>
 
-            </table>
-
+                </table>
+            </div>
             <!--------------------------------------------------------->
-            <p class="js-calculation calculation"></p>
+            <p class="js-calculation calculation" id="Calculator and Currency Converter"></p>
 
             <p>
-              <button class="calculator-button gray-button" onclick="
+                <button class="calculator-button gray-button" onclick="
                updateCalculation('1');
              ">1</button>
-          
-              <button class="calculator-button gray-button" onclick="
+
+                <button class="calculator-button gray-button" onclick="
                updateCalculation('2');
              ">2</button>
-          
-              <button class="calculator-button gray-button" onclick="
+
+                <button class="calculator-button gray-button" onclick="
                updateCalculation('3');
              ">3</button>
-          
-              <button class="calculator-button orange-button" onclick="
+
+                <button class="calculator-button orange-button" onclick="
                updateCalculation(' + ');
              ">+</button>
             </p>
-          
+
             <p>
-              <button class="calculator-button gray-button" onclick="
+                <button class="calculator-button gray-button" onclick="
                updateCalculation('4');
              ">4</button>
-          
-              <button class="calculator-button gray-button" onclick="
+
+                <button class="calculator-button gray-button" onclick="
                updateCalculation('5');
              ">5</button>
-          
-              <button class="calculator-button gray-button" onclick="
+
+                <button class="calculator-button gray-button" onclick="
                updateCalculation('6');
              ">6</button>
-          
-              <button class="calculator-button orange-button" onclick="
+
+                <button class="calculator-button orange-button" onclick="
                updateCalculation(' - ');
              ">-</button>
             </p>
-          
+
             <p>
-              <button class="calculator-button gray-button" onclick="
+                <button class="calculator-button gray-button" onclick="
                updateCalculation('7');
              ">7</button>
-          
-              <button class="calculator-button gray-button" onclick="
+
+                <button class="calculator-button gray-button" onclick="
                updateCalculation('8');
              ">8</button>
-          
-              <button class="calculator-button gray-button" onclick="
+
+                <button class="calculator-button gray-button" onclick="
                updateCalculation('9');
              ">9</button>
-          
-              <button class="calculator-button orange-button" onclick="
+
+                <button class="calculator-button orange-button" onclick="
                updateCalculation(' * ');
              ">*</button>
             </p>
-          
+
             <p>
-              <button class="calculator-button gray-button" onclick="
+                <button class="calculator-button gray-button" onclick="
                updateCalculation('0');
              ">0</button>
-          
-              <button class="calculator-button gray-button" onclick="
+
+                <button class="calculator-button gray-button" onclick="
                updateCalculation('.');
              ">.</button>
-          
-              <button class="calculator-button gray-button" onclick="
+
+                <button class="calculator-button gray-button" onclick="
                calculation = eval(calculation);
           
                // Display the calculation on the page
@@ -185,14 +206,14 @@
           
                localStorage.setItem('calculation', calculation);
              ">=</button>
-          
-              <button class="calculator-button orange-button" onclick="
+
+                <button class="calculator-button orange-button" onclick="
                updateCalculation(' / ');
              ">/</button>
             </p>
-          
+
             <p>
-              <button class="calculator-button gray-button clear-button" onclick="
+                <button class="calculator-button gray-button clear-button" onclick="
                calculation = '';
           
                // Display the calculation on the page
@@ -202,41 +223,46 @@
                localStorage.setItem('calculation', calculation);
              ">Clear</button>
             </p><br>
-          
+
             <div class="currency-select-wrapper">
-              <select id="currency-select" class="currency-select">
-                  <option value="USD" selected>USD</option>
-                  <option value="EUR">EUR</option>
-                  <option value="CAD">CAD</option>
-                  <option value="VND">VND</option>
-                  <option value="JPY">JPY</option>
-                  <option value="RUB">RUB</option>
-                  <option value="SGD">SGD</option>
-              </select>
-              <button class="converter-button" onclick="openCurrencyConverter()">Convert</button>
-          </div>
-          <p class="converted-amount"></p>
-          
-            <p class="dark-mode-class"><b>For more information about IT career, we have a list of career type in the Navigation bar to provide
+                <select id="currency-select" class="currency-select">
+                    <option value="USD" selected>USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="CAD">CAD</option>
+                    <option value="VND">VND</option>
+                    <option value="JPY">JPY</option>
+                    <option value="RUB">RUB</option>
+                    <option value="SGD">SGD</option>
+                </select>
+                <button class="converter-button" onclick="openCurrencyConverter()">Convert</button>
+            </div>
+            <p class="converted-amount"></p>
+
+            <p class="dark-mode-class"><b>For more information about IT career, we have a list of career type in the
+                    Navigation bar to provide
                     you a deeper understanding of the job.</b></p>
         </div>
-        <div class="comment-section">
-            <h3>Leave a comment</h3>
-            <p>Your email address will not be published. Required fields are marked *</p>
-            <div class="input">
-                <form id="comment-form">
-                    <label for="comment"><span style="color: black;">Comment:</span></label><br>
-                    <textarea id="comment" name="comment" required></textarea><br>
-                    <label for="name"><span style="color: black;">Name:</span></label>
-                    <input type="text" id="name" name="name" required>
-                    <br><br>
-                    <label for="email"><span style="color: black;">Email:</span></label>
-                    <input type="text" id="email" name="email" required>
-                    <br>
-                    <label for="website"><span style="color: black;">Website:</span></label>
-                    <input type="text" id="website" name="website" required>
-                    <button type="submit"><p>Post Comment </p>>></button>
-                </form>
+        <div id="Comment">
+            <div class="comment-section">
+                <p><b>Leave a comment</b></p>
+                <p>Your email address will not be published. Required fields are marked *</p>
+                <div class="input">
+                    <form id="comment-form">
+                        <label for="comment"><span style="color: black;">Comment:</span></label><br>
+                        <textarea id="comment" name="comment" required></textarea><br>
+                        <label for="name"><span style="color: black;">Name:</span></label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email"><span style="color: black;">Email:</span></label>
+                        <input type="text" id="email" name="email" required>
+
+                        <label for="website"><span style="color: black;">Website:</span></label>
+                        <input type="text" id="website" name="website" required>
+                        <button type="submit">
+                            <p>Post Comment </p>>>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
         <script src="../javascript/darkmode.js"></script>

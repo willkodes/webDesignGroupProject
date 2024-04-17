@@ -171,6 +171,8 @@ footer address {
     text-align: right;
     margin-left: 600px;
 }
+
+
 @media screen  and (max-width:540px){
     img {
         display: none;
